@@ -105,6 +105,7 @@ SELECT division_code, fthg + ftag AS total FROM matches WHERE division_code = 'E
 ```sql
 <!-- Copy solution here -->
 
+SELECT division_code, season, fthg + ftag AS total FROM matches ORDER BY total DESC LIMIT 1; 
 
 
 ```
